@@ -25,4 +25,37 @@ body {
 .right-part {
   flex: 5;
   background-color: rgb(236, 236, 236);
+  font-family: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+
+  padding-top: 8rem;
+}
+
+.padding-left {
+  padding-left: 2.2rem;
+  width: 55ch;
+}
+
+.right-part > .text-layout {
+  font-weight: bold;
+}
+
+.form-layout {
+  background-color: rgb(255, 255, 255);
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 0.8rem;
+}
+
+.form-layout > p {
+  font-weight: bold;
 }
