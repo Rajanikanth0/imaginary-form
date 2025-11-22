@@ -4,24 +4,25 @@
   box-sizing: border-box;
 }
 
-.body-layout {
-  --margin: 0.5rem;
-  
-  border: thin solid black;
+body {
+  width: 75%;
+  margin: 0 auto;
+  background-color: black;
+}
 
-  margin: var(--margin);
-  min-height: calc(100vh - calc(var(--margin) * 2));
+.body-layout {
+  min-height: 100vh;
 
   display: flex;
 }
 
 .left-part {
-  flex: 2;
+  flex: 3;
   background-image: url("../media/image/ocean-view.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .right-part {
-  flex: 3;
-  background-color: lightgreen;
+  flex: 5;
+  background-color: rgb(236, 236, 236);
 }
