@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-layout {
+  --margin: 0.5rem;
+  
+  border: thin solid black;
+
+  margin: var(--margin);
+  min-height: calc(100vh - calc(var(--margin) * 2));
+
+  display: flex;
+}
+
+.left-part {
+  flex: 2;
+  background-image: url("../media/image/ocean-view.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.right-part {
+  flex: 3;
+  background-color: lightgreen;
+}
