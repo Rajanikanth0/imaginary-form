@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "kaushanscript";
+  src: url("../media/font/kaushanscript-regular-webfont.woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +13,12 @@
 }
 
 html {
-  font-size: clamp(0.5rem, calc(0.2rem + 1vw), 1.5rem);
+  font-size: clamp(0.5rem, calc(0.3rem + 1vw), 1.5rem);
   line-height: 1.2;
 }
 
 body {
-  width: 75%;
+  width: 74%;
   margin: 0 auto;
   background-color: black;
 }
@@ -54,6 +62,8 @@ body {
 }
 
 form {
+  --input-border: 0.15em;
+
   margin-top: 0.8em;
 
   display: flex;
@@ -69,14 +79,16 @@ form {
   width: 20em;
 
   font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+  font-weight: bold;
+  color: rgb(112, 112, 112);
 }
 .form-row > input {
-  font-size: inherit;
-  height: 2.5em;
-  border: 0.08em solid rgb(233, 233, 233);
-  background-color: rgb(250, 250, 250);
+  font-size: 1.3em;
+  border: none; /* Use outline */
+  outline: var(--input-border) solid rgba(0, 0, 0, 0.055);
+  background-color: rgb(253, 253, 253);
   border-radius: 0.2em;
-  padding-left: 1em;
+  padding: 0.3em 0.5em;
 }
 
 .form-layout > p {
@@ -112,8 +124,21 @@ button {
 /* form controls */
 
 input:user-invalid {
-  outline: 0.08em solid rgb(184, 0, 0);
+  outline: var(--input-border) solid rgb(184, 0, 0);
 }
 input:focus {
-  outline: 0.08em solid rgb(0, 80, 184);
+  outline: var(--input-border) solid rgb(0, 80, 184);
+  box-shadow: 0.2em 0.2em 0.5em rgb(185, 185, 185);;
+}
+
+.title-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "kaushanscript";
+  background-color: rgba(255, 255, 255, 0.418);
+}
+.title-layout img{
+  height: 2em;
 }
