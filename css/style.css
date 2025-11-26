@@ -146,3 +146,19 @@ input:focus {
 .title-layout img{
   height: 2em;
 }
+
+.credits {
+  position: absolute;
+  bottom: 0.5em;
+  padding-left: 0.5em;
+  margin: 0 auto;
+
+  font-size: 0.7em;
+  font-family: sans-serif;
+  color: white;
+  text-shadow: 0 0 0.2em black;
+}
+
+.credits a {
+  color: inherit;
+}
